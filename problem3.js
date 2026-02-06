@@ -1,17 +1,20 @@
 /*function signature/sample */
 function finalScore (omr) {
   //write your code here
-  if (typeof omr !== "object" && typeof omr.property 
-    !=="number") {
+  if (typeof omr !== "object"
+    && typeof omr.right !== "number"
+    && typeof omr.wrong !== "number"
+    && typeof omr.skip !== "number"
+   ) {
     return 'Invalid';
   }
 
   else {
-    if (omr.right + omr.wrong + omr.skip === 100) {
+    if (omr.right + omr.wrong + omr.skip !== 100) {
       return 'Invalid';
     }
     else {
-      let Score = right - (wrong / 2);
+      let Score =omr.right - (omr.wrong / 2);
       let finalScore = Math.round(Score);
       return finalScore;
     }
@@ -20,7 +23,7 @@ function finalScore (omr) {
 }
 
 const omr = {
-  right: 54, wrong:3, skip: 23
+  right: 54, wrong:20, skip: 23
 }
 
 const result = finalScore(omr);
