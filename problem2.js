@@ -15,6 +15,6 @@ function validOtp(otp) {
   }
 }
 
-const OTP = validOtp(342342);
+const OTP = validOtp('errwerwe');
 console.log(OTP);
 
