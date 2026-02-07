@@ -23,7 +23,7 @@ function finalScore (omr) {
 }
 
 const omr = {
-  right: 54, wrong:20, skip: 23
+  right: 97, wrong:3, skip: 0
 }
 
 const result = finalScore(omr);
