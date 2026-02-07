@@ -22,6 +22,6 @@ function analyzeText(str) {
 }
 
 
-const sentence = analyzeText("Keep coding keep shining");
+const sentence = analyzeText("Keep coding!");
 console.log(sentence);
 

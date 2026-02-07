@@ -1,7 +1,7 @@
 /*function signature/sample */
 function gonoVote(array) {
   //write your code here
-  if (!Array.isArray(array)) {
+  if (!Array.isArray(array) || array.length===0) {
     return 'Invalid';
   }
   else {
@@ -12,8 +12,11 @@ function gonoVote(array) {
         isHa++;
       }
 
-      else {
+      else if(array[i]==='na'){
         isNa++;
+      }
+      else {
+        return 'Invalid';
       }
     }
 
@@ -30,6 +33,6 @@ function gonoVote(array) {
 }
 
 
-const arr = ['ha', 'na', 'na','ha','ha'];
+const arr = ['ha', 'na', 'na','na'];
 const result = gonoVote(arr);
 console.log(result);

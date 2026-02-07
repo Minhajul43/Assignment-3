@@ -1,8 +1,9 @@
 /*function signature/sample */
 function newPrice(currentPrice , discount ) {
-  // zzYou have to write your code here
+  // You have to write your code here
   if (typeof currentPrice !== "number"
       || typeof discount !== "number"
+      ||currentPrice<=0
       || discount > 100
       || discount < 0) {
     return 'Invalid';
@@ -15,6 +16,6 @@ function newPrice(currentPrice , discount ) {
   }
 }
 
-const price = newPrice(2000, 20);
+const price = newPrice(2000, 19);
 console.log(price);
 

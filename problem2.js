@@ -7,7 +7,10 @@ function validOtp(otp) {
 
   else {
     if (otp.startsWith('ph-') && otp.length === 8) {
-      return true;
+      let digit = otp.slice(3);
+      if (!isNaN(digit)) {
+        return true;
+      }
     }
     else {
       return false;
@@ -15,6 +18,6 @@ function validOtp(otp) {
   }
 }
 
-const OTP = validOtp('errwerwe');
+const OTP = validOtp('ph-34343');
 console.log(OTP);
 
