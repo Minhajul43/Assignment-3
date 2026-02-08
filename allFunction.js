@@ -1,6 +1,6 @@
 //Problem-01: New Price for Eid Sale
 function newPrice(currentPrice , discount ) {
-  // You have to write your code here
+
   if (typeof currentPrice !== "number"
       || typeof discount !== "number"
       ||currentPrice<=0
@@ -18,7 +18,7 @@ function newPrice(currentPrice , discount ) {
 
 //Problem-02: OTP Validation for Zapshift
 function validOtp(otp) {
-  // You have to write your code here
+  
   if (typeof otp !== "string") {
     return 'Invalid';
   }
@@ -38,7 +38,7 @@ function validOtp(otp) {
 
 //Problem-03: BCS Final Score Calculator
 function finalScore (omr) {
-  //write your code here
+  
   if (typeof omr !== "object"
     && typeof omr.right !== "number"
     && typeof omr.wrong !== "number"
@@ -66,7 +66,7 @@ function finalScore (omr) {
 
 //Problem-04: Upcoming Gono Vote
 function gonoVote(array) {
-  //write your code here
+  
   if (!Array.isArray(array) || array.length===0) {
     return 'Invalid';
   }
@@ -100,7 +100,7 @@ function gonoVote(array) {
 
 //Problem-05: Text Analyzer for an AI Company
 function analyzeText(str) {
-  // You have to write your code here
+  
   if (typeof str !== "string" || str==="") {
     return 'Invalid';
   }
