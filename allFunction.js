@@ -1,4 +1,4 @@
-//Problem-01: New Price for Eid Sale
+//Problem-01: New Price for Eid Sale ----->
 function newPrice(currentPrice , discount ) {
 
   if (typeof currentPrice !== "number"
@@ -16,7 +16,7 @@ function newPrice(currentPrice , discount ) {
   }
 }
 
-//Problem-02: OTP Validation for Zapshift
+//Problem-02: OTP Validation for Zapshift\----->
 function validOtp(otp) {
   
   if (typeof otp !== "string") {
@@ -36,7 +36,7 @@ function validOtp(otp) {
   }
 }
 
-//Problem-03: BCS Final Score Calculator
+//Problem-03: BCS Final Score Calculator------>
 function finalScore (omr) {
   
   if (typeof omr !== "object"
@@ -64,7 +64,7 @@ function finalScore (omr) {
   
 }
 
-//Problem-04: Upcoming Gono Vote
+//Problem-04: Upcoming Gono Vote----->
 function gonoVote(array) {
   
   if (!Array.isArray(array) || array.length===0) {
@@ -98,7 +98,7 @@ function gonoVote(array) {
   }
 }
 
-//Problem-05: Text Analyzer for an AI Company
+//Problem-05: Text Analyzer for an AI Company----->
 function analyzeText(str) {
   
   if (typeof str !== "string" || str==="") {
