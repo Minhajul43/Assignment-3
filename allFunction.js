@@ -1,4 +1,4 @@
-//Problem-01: New Price for Eid Sale ----->
+//Problem-01: New Price for Eid Sale--->
 function newPrice(currentPrice , discount ) {
 
   if (typeof currentPrice !== "number"

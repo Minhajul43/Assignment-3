@@ -1,4 +1,4 @@
-/*function signature/sample */
+/*function signature */
 function gonoVote(array) {
   //write your code here
   if (!Array.isArray(array) || array.length===0) {
